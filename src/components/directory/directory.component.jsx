@@ -4,7 +4,7 @@ import './directory.style.scss'
 
 class Directory extends React.Component {
 
-  constructor(){
+  constructor() {
     super();
     this.state = {
       sections: [
@@ -45,15 +45,15 @@ class Directory extends React.Component {
   }
 
 
-  render(){
-    return(
-    <div className='directory-menu'>
-      {this.state.sections.map(({ id, ...otherSectionProps})  => (
-      <MenuItem key={id} {...otherSectionProps}/>
-      ))}
-      </div>  
+  render() {
+    return (
+      <div className='directory-menu'>
+        {this.state.sections.map(({ id, ...otherSectionProps }) => (
+          <MenuItem key={id} {...otherSectionProps} />
+        ))}
+      </div>
     )
   }
 }
 
-export default Directory ;
+export default Directory;
